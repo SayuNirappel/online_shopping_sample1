@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_shopping/view/home_screen/more_details_screen/mopre_details_screen.dart';
 
 void main() {}
 
@@ -21,7 +22,12 @@ class TabAll extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MoreDetailsScreen()));
+                      },
                       child: Image(
                         image: NetworkImage(
                             "https://images.pexels.com/photos/447570/pexels-photo-447570.jpeg?auto=compress&cs=tinysrgb&w=600"),
