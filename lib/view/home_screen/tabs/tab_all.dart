@@ -22,6 +22,7 @@ class TabAll extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TextButton(
+                      iconAlignment: IconAlignment.start,
                       onPressed: () {
                         Navigator.push(
                             context,
